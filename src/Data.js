@@ -1,87 +1,188 @@
-const chlothes=[
-     {
+
+const products={
+
+ furniture:[ {
+     id: 1,
+     name: 'green sofa',
+     href: '#',
+     imageSrc: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+     imageAlt: "Front of men's Basic Tee in black.",
+     price: '$300',
+     color: 'green',
+     category:'furniture',
+     previousprice:'$500',
+     sale:true,
+     brand:'House my Brand',
+     percent:'30%',
+   },     
+   {
+     id: 2,
+     name: 'baby blue chair',
+     href: '#',
+     imageSrc: 'https://images.unsplash.com/photo-1634643836960-c345b3c3e998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
+     imageAlt: "Front of men's Basic Tee in black.",
+     price: '$350',
+     color: 'Blue',
+     category:'furniture',
+     previousprice:'$500',
+     sale:false,
+     brand:'House my Brand'
+   },     
+   {
+     id: 3,
+     name: 'yogurt sofa',
+     href: '#',
+     imageSrc: 'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80',
+     imageAlt: "Front of men's Basic Tee in black.",
+     price: '$400',
+     color: 'Yogurt',
+     category:'furniture',
+     previousprice:'$500',
+     sale:false,
+     brand:'House my Brand'
+   },     
+   {
+     id: 4     ,
+     name: 'brown sofa',
+     href: '#',
+     imageSrc: 'https://plus.unsplash.com/premium_photo-1673548916754-aefad0c0955a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+     imageAlt: "Front of men's Basic Tee in black.",
+     price: '$655',
+     color: 'Brown',
+     category:'furniture',
+     previousprice:'$500',
+     sale:false,
+     brand:'House my Brand'
+   }],    
+   chlothes:[
+     {    id:1,
           color:'black',
-          imgsrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
+          price:"$300",
+          name:'Black T-shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'30%'
      },
-     {
+     {    id:2,
           color:'blue',
-          imgsrc:'https://images.unsplash.com/photo-1589310243389-96a5483213a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-          price:300,
-          title:'Ravin shirt',
-
-     },
-     {
+          imageSrc:'https://images.unsplash.com/photo-1589310243389-96a5483213a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+          price:"$300",
+          name:'T-Shirt Summer Vibes',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:false,
+          brand:'House my Brand',
+     },   
+     {    id:3,
           color:'grey',
-          imgsrc:'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          price:"$300",
+          name:'Grey T-shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:false,
+          brand:'House my Brand'
      },
-     {
+     {    id:4,
           color:'baby blue',
-          imgsrc:'https://images.unsplash.com/photo-1586798658502-0dc367cb2776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-          price:300,
-          title:'Ravin shirt',
+          imageSrc:'https://images.unsplash.com/photo-1586798658502-0dc367cb2776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+          price:"$300",
+          name:'Baby blue nice shirt',
+          category:'chlothes',
+          sale:false
 
      },
-     {
+     {    id:5,
           color:'spotted blue',
-          imgsrc:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'30%'
      },
-     {
+     {    id:6,
           color:'white shirt',
-          imgsrc:'https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'30%'
      },
-     {
+     {    id:7,
           color:'black',
-          imgsrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'30%'
      },
-     {
+     {    id:8,
           color:'blue',
-          imgsrc:'https://images.unsplash.com/photo-1589310243389-96a5483213a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1589310243389-96a5483213a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'furniture',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'16%'
      },
-     {
+     {    id:9,
           color:'grey',
-          imgsrc:'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'15%'
      },
-     {
+     {    id:10,
           color:'spotted blue',
-          imgsrc:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'50%'
      },
-     {
+     {    id:11,
           color:'white shirt',
-          imgsrc:'https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'20%'
      },
-     {
+     {    id:12,
           color:'black',
-          imgsrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
-          price:300,
-          title:'Ravin shirt',
-
+          imageSrc:'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80',
+          price:"$300",
+          name:'Ravin shirt',
+          category:'chlothes',
+          previousprice:'$500',
+          sale:true,
+          brand:'House my Brand',
+          percent:'10%'
      },
 ]
-export {chlothes}
+}
+export {products}

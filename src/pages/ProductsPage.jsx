@@ -1,11 +1,12 @@
 import Choices from "../Components/Choices"
 import Product from "../Components/Product"
-import Newsletter from "../Components/Newsletter"
+// import Newsletter from "../Components/Newsletter"
 // Accesskey:py_cvN3K89iUWdngrsiR_GBbADzu3FfOwVFX3AaTMhw
 //secretkey:YqkXWQO7TVJHpJFp5srSOHKNE9GSwsuFmK7NDa6-0Jo
-import { chlothes } from "../Data"
+import { products } from "../Data"
 import Dropdown from "../Components/Dropdown"
 import Checkboxes from "../Components/Checkboxes"
+import { Link } from "react-router-dom"
 function ProductsPage() {
   return (
  <div>
@@ -31,13 +32,12 @@ function ProductsPage() {
           <div className="">
           <Choices/>
           <div className="  p-5  flex justify-center lg:items-start md:items-start flex-wrap gap-10">
-          { chlothes.map((product,index)=>{
-               return <Product color={'black'} imageSrc={product.imgsrc} key={index}price={product.price}name={product.title} imageAlt={product.title}/>
+          { products.chlothes.map((product)=>{
+               return <Link key={product.id} to={`/productdetail/${product.category}/${product.id}`}><Product sale={product.sale} percent={product.percent} color={product.color} imageSrc={product.imageSrc} key={product.id}price={product.price}name={product.name} imageAlt={product.title}/></Link>
           })}
           </div>
            </div>
      </div>
-     <Newsletter backgroundColor={'#4361ee'} backgroundImage={'https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'}/>
  </div>
   )
 }
