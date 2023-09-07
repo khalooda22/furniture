@@ -53,8 +53,8 @@ function Hero() {
 
 //    },[backgrounds])
  return (
-    <div className='h-[800px]   bg-cover relative ' style={{backgroundImage:`url(${background[count]})`}}>
-      <div className="absolute  lg:w-[400px] md:w-screen bottom-96 lg:left-[500px] md:lef-[200px]   ">
+    <div className='h-[800px] min-w-[303px] w-full lg:w-full md:w-full md:overflow-hidden   bg-cover relative  ' style={{backgroundImage:`url(${background[count]})`}}>
+      <div className="absolute  lg:w-[400px] md:w-screen  bottom-96 lg:left-[500px] md:lef-[200px]   ">
           <h1 className="text-5xl font-bold text-white leading-relaxed drop-shadow-xl shadow-black ">Make your house into a home</h1>
 
       </div>
@@ -66,7 +66,7 @@ function Hero() {
       <h1 className='text-lg text-white font-bold self-center capitalize'>shop now</h1>
 
       </div>
-      <div className='absolute  bg-white bottom-0 container p-5 rounded-tr-full flex flex-col lg:flex-row md:flex-col justify-center gap-5 lg:gap-16'>
+      <div className='absolute  bg-white bottom-0 lg:container p-5 lg:rounded-tr-full md:rounded-tr-full flex flex-col lg:flex-row md:flex-col justify-center gap-5 lg:gap-16'>
       <Feature icon={<LocalShippingIcon fontSize='large' className='text-blue-800 bg-gray-100 p-2 rounded-lg'/>} title="free shipping" description='On purchases over $399'/>
       <Feature icon={<SentimentSatisfiedAltIcon fontSize='large' className='text-blue-800 bg-gray-100 p-2 rounded-lg'/>} title="99% Satisfied Customers" description={`Our clients' opinions
 speak for themselves
@@ -74,12 +74,12 @@ speak for themselves
       <Feature icon={<PaidIcon fontSize='large' className='text-blue-800 bg-gray-100 p-2 rounded-lg'/>} title="Originality Guaranteed" description='2 years warranty for each
 product from our store'/>
       </div>
-      <div className='absolute  h-50 top-10 md:top-24 md:right-10 lg:right-20 lg:top-[700px] right-2 flex gap-5'>
-        <div className='w-16 h-16 flex justify-center items-center bg-black lg:bg-gray-300 bg-opacity-40  text-white'>
+      <div className='absolute  h-50 top-10 md:top-24 md:right-10 lg:right-20 lg:top-[700px] right-20 flex gap-5'>
+        <div className='w-10 h-10 lg:w-16 lg:h-16 md:w-16 md:h-16 flex justify-center items-center bg-black lg:bg-gray-300 bg-opacity-40  text-white'>
     <ArrowBackIcon fontSize='large' className='' onClick={handledecrement} />
 
         </div>
-        <div className='w-16 h-16 flex justify-center items-center  bg-white   border '>
+        <div className='w-10 h-10 lg:w-16 lg:h-16 md:w-16 md:h-16 flex justify-center items-center  bg-white   border '>
          <ArrowForwardIcon fontSize='large' onClick={handleincrement}/>
 
         </div>

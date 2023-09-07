@@ -5,7 +5,7 @@ import PaidIcon from '@mui/icons-material/Paid';
 import HighQualityIcon from '@mui/icons-material/HighQuality';
 function Affords() {
   return (
-    <div className="container mx-auto  flex flex-col items-center lg:flex-row md:flex-row lg:justify-between md:justify-between">
+    <div className="lg:container lg:mx-auto  flex flex-col items-center lg:flex-row md:flex-row lg:justify-between md:justify-between">
       <Afforditem icon={<LocalShippingIcon/>} title={"free shipping"} description='All purchases over $399 are eligible for
 free shipping via UPS Pack and Ship.' />
  <Afforditem icon={<PaymentsIcon/>} title={"Easy Payment"} description='All payments are processed instantly

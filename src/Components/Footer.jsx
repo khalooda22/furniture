@@ -6,11 +6,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Footer() {
   return (
-    <div className=' container mx-auto flex flex-col lg:flex-row md:flex-row bg-white p-2 justify-between'>
+    <div className=' lg:container md:container lg:mx-auto md:mx-auto min-w-[400px] flex flex-col lg:flex-row md:flex-row bg-white p-2 justify-between md:gap-10'>
 
-      <div className='flex flex-col gap-10 items-center lg:items-start md:items-start'>
+      <div className='flex flex-col gap-10 items-center lg:items-start md:items-start '>
       <img src={logo} alt="logo" className='w-52' />
-      <p className='w-[420px]'>High quality Scandinavian furniture made from eco-friendly  materials. 
+      <p className='lg:w-[420px] md:w-[420px] min-w-[300px]'>High quality Scandinavian furniture made from eco-friendly  materials. 
          Designed for modern, minimalist apartments</p>
           <div className='flex gap-10'>
           <FacebookOutlinedIcon className='text-gray-400 hover:text-blue-500'/>
