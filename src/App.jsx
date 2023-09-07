@@ -15,9 +15,6 @@ function App() {
   return (
     <BrowserRouter>
    <div className="relative ">
-   
-    {/* <Hero/> */}
-    {/* <Hero/> */}
   <Navbar/>
   <Routes>
 <Route path='/' element={<Home/>}/>
@@ -39,6 +36,7 @@ function App() {
   
    </div>
     </BrowserRouter>
+
   )
 }
 
